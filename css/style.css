@@ -1,0 +1,70 @@
+/* ----------------sidebar----------- */
+.sidebar {
+  padding: 050px 015px 060px 055px;
+  background-color: #fcfc;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 252px;
+  height: 100vh;
+}
+
+.sidebar-logo {
+  margin-bottom: 57px;
+}
+
+.sidebar-help {
+  margin-top: auto;
+}
+
+/* ----------------nav------ */
+.nav {}
+
+.nav-title {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 44px;
+}
+
+.nav-list {
+  font-size: 16px;
+}
+
+.nav-list li {
+  margin-bottom: 27px;
+}
+
+.nav-list li:last-child {
+  margin-bottom: 0;
+}
+
+.nav-list a {
+  transition: color .2s ease-in;
+}
+
+.nav-list a:hover {
+  color: #FD2E24;
+
+}
+
+.nav-list img {
+  margin-right: 10px;
+  vertical-align: middle;
+
+  width: 26px;
+  height: auto;
+  object-fit: none;
+}
+
+/* -------------help-------- */
+.help {
+  font-size: 16px;
+}
+
+.help-icon {
+  vertical-align: middle;
+  margin-right: 17px;
+}
