@@ -9,7 +9,7 @@
   align-items: flex-start;
 
   width: 252px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .sidebar-logo {
@@ -21,7 +21,7 @@
 }
 
 /* ----------------nav------ */
-.nav {}
+
 
 .nav-title {
   font-weight: 700;
@@ -67,4 +67,111 @@
 .help-icon {
   vertical-align: middle;
   margin-right: 17px;
+}
+
+/* ==============main============= */
+.main {
+  padding-top: 45px;
+  width: 1100px;
+  background-color: aqua;
+}
+
+/* =======header======= */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+/* =========search====== */
+
+.search {
+  width: 490px;
+  height: 45px;
+
+}
+
+.search-label {
+  height: 100%;
+  display: flex;
+}
+
+
+.search-input {
+  flex-grow: 1;
+  padding: 0 17px;
+  font-family: 'Circular Std';
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  border: none;
+}
+
+.search-input::placeholder {
+  opacity: 0.2;
+}
+
+/* ==========nav header =========== */
+
+.nav-header {
+  font-family: 'Circular Std';
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.nav-header-list {
+  display: flex;
+  align-items: center;
+
+}
+
+.nav-header-link-text {
+  position: relative;
+}
+
+.nav-header-link-text::after {
+  position: absolute;
+  left: 0;
+  width: 0%;
+  bottom: -7px;
+  content: '';
+  display: block;
+
+  height: 2px;
+  background-color: #000;
+
+  transition: width .2s ease-in-out;
+
+}
+
+.nav-header-link-text:hover::after {
+  width: 100%;
+}
+
+.nav-header-link-text.active::after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: -7px;
+  content: '';
+  display: block;
+
+  height: 2px;
+  background-color: #000;
+
+}
+
+.nav-header-link-text+.nav-header-link-text {
+  margin-left: 42px;
+}
+
+.nav-header-link-icon+.nav-header-link-icon {
+  /* оступ для иконки у каторой есть иконка слева ,оступ только между последнми двумя иконками  */
+  margin-left: 25px;
+}
+
+.nav-header-link-text+.nav-header-link-icon {
+  margin-left: 50px;
 }

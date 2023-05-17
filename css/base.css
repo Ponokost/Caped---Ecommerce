@@ -8,4 +8,14 @@ body {
   font-size: 15px;
   line-height: 1;
   background-color: #fafafa;
+
+  display: flex;
+  column-gap: 40px;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
 }
